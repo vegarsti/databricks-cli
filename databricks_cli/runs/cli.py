@@ -81,7 +81,7 @@ def _runs_to_table(runs_json):
               help='The offset is relative to the most recent run ID. Set to 0 by default.')
 @click.option('--limit', default=None, type=int,
               help='The limit determines the number of runs listed. '
-                   'Limit must be between 0 and 1000. Set to 20 runs by default.')
+                   'Limit must be between 0 and 26. Set to 20 runs by default.')
 @click.option('--output', help=OutputClickType.help, type=OutputClickType())
 @api_version_option
 @debug_option
